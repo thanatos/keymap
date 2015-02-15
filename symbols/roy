@@ -1,0 +1,40 @@
+xkb_symbols "roy" {
+    key <AC02> {
+        type= "FOUR_LEVEL_ALPHABETIC",
+        symbols[Group1]= [ s, S, bracketleft, bracketleft ]
+    };
+    key <AC03> {
+        type= "FOUR_LEVEL_ALPHABETIC",
+        symbols[Group1]= [ d, D, braceleft, braceleft ]
+    };
+    key <AC04> {
+        type= "FOUR_LEVEL_ALPHABETIC",
+        symbols[Group1]= [ f, F, parenleft, parenleft ]
+    };
+    key <AC07> {
+        type= "FOUR_LEVEL_ALPHABETIC",
+        symbols[Group1]= [ j, J, parenright, parenright ]
+    };
+    key <AC08> {
+        type= "FOUR_LEVEL_ALPHABETIC",
+        symbols[Group1]= [ k, K, braceright, braceright ]
+    };
+    key <AC09> {
+        type= "FOUR_LEVEL_ALPHABETIC",
+        symbols[Group1]= [ l, L, bracketright, bracketright ]
+    };
+
+    key <CAPS> { [ ISO_Level3_Shift ] };
+    key <SPCE> {
+		type= "FOUR_LEVEL",
+		symbols[Group1]= [ space, space, underscore, minus ]
+	};
+	key <BKSP> {
+		type= "FOUR_LEVEL_ALPHABETIC",
+		symbols[Group1]= [ BackSpace, BackSpace, Escape, Escape ]
+	};
+	//key <RTRN> {
+	//	type= "FOUR_LEVEL_ALPHABETIC",
+	//	symbols[Group1]= [ Return, Return, Escape, Escape]
+	//};
+};
