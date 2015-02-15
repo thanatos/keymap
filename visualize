@@ -1,0 +1,10 @@
+#!/bin/bash
+
+set -e
+
+cd visuals
+
+xkbcomp -xkm :0 - | xkbprint - -o - | ps2pdf - level1.pdf
+xkbcomp -xkm :0 - | xkbprint -ll 3 - -o - | ps2pdf - level3.pdf
+xkbcomp -xkm :0 - | xkbprint -ll 4 - -o - | ps2pdf - level4.pdf
+pdfunite level1.pdf level3.pdf level4.pdf layout.pdf
